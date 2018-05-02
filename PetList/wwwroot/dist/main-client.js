@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "174c4e1068f9b0f8f268"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "a3f07f20139ab06f5a55"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -737,6 +737,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 
+//Obsolete Method. 
 var GroupByPipe = (function () {
     function GroupByPipe() {
     }
@@ -754,6 +755,8 @@ var GroupByPipe = (function () {
             arr[field].push(value);
         }
         var result = Object.keys(arr).map(function (key) { return ({ key: key, 'value': arr[key] }); });
+        //Below code can be used to dsiplay the group details using the pipe template
+        //Currently this is not beinng used 
         //var sortedResult = new Array<PetDisplayDto>();
         //for (let group of result) {
         //    var personData = new PetDisplayDto();
@@ -2213,13 +2216,13 @@ module.exports = "<div class='container-fluid'>\r\n    <div class='row'>\r\n    
 /* 23 */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<h1>Weather forecast</h1>\r\n\r\n<p>This component demonstrates fetching data from the server.</p>\r\n\r\n<p *ngIf=\"!persons\"><em>Loading...</em></p>\r\n\r\n\r\n\r\n\r\n\r\n<!--<ul>\r\n    <li *ngFor=\"let group of persons | groupBy:'gender'\">\r\n        <h2>{{group.key}}</h2>\r\n        <ul>\r\n            <li *ngFor=\"let person of group.value\">\r\n                <ul>\r\n                    <li *ngFor=\"let pet of person.pets\">\r\n                        {{pet.name}}\r\n                    </li>\r\n                </ul>\r\n\r\n</li>\r\n        </ul>\r\n\r\n    </li>\r\n</ul>-->\r\n<!--<ul>\r\n    <li *ngFor=\"let petDisplayDto of persons | groupBy:'gender' | pgb\">\r\n        <h2>{{petDisplayDto.ownersGender}}</h2>\r\n        <ul>\r\n            <li *ngFor=\"let petName of petDisplayDto.petNames\">\r\n                {{petName}}\r\n\r\n            </li>\r\n        </ul>\r\n\r\n    </li>\r\n</ul>-->\r\n\r\n<ul>\r\n    <li *ngFor=\"let petDisplayDto of petDisplayResults\">\r\n        <h2>{{petDisplayDto.ownersGender}}</h2>\r\n        <ul>\r\n            <li *ngFor=\"let petName of petDisplayDto.petNames\">\r\n                {{petName}}\r\n\r\n            </li>\r\n        </ul>\r\n\r\n    </li>\r\n</ul>\r\n";
+module.exports = "\r\n<h1>Persons with Cats</h1>\r\n\r\n<p>This page will display the list of cat names in ascending order grouped by the gender of the owner</p>\r\n\r\n<p *ngIf=\"!persons\"><em>Loading...</em></p>\r\n<!-- Designed the Model used for View to fit for the requirement. The DTO has minimal data required to be easily bound to the UI-->\r\n<ul>\r\n    <li *ngFor=\"let petDisplayDto of petDisplayResults\">\r\n        <h2>{{petDisplayDto.ownersGender}}</h2>\r\n        <ul>\r\n            <li *ngFor=\"let petName of petDisplayDto.petNames\">\r\n                {{petName}}\r\n\r\n            </li>\r\n        </ul>\r\n\r\n    </li>\r\n</ul>\r\n\r\n\r\n<!-- Below are the sample code that was used to display the cat names using the pipe template . This was discarded as the sorting by the cats name needed more logic.\r\n    sorted the data inthe TS itself hence below code is not used-->\r\n<!--<ul>\r\n    <li *ngFor=\"let group of persons | groupBy:'gender'\">\r\n        <h2>{{group.key}}</h2>\r\n        <ul>\r\n            <li *ngFor=\"let person of group.value\">\r\n                <ul>\r\n                    <li *ngFor=\"let pet of person.pets\">\r\n                        {{pet.name}}\r\n                    </li>\r\n                </ul>\r\n\r\n</li>\r\n        </ul>\r\n\r\n    </li>\r\n</ul>-->\r\n";
 
 /***/ }),
 /* 24 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class='main-nav'>\r\n    <div class='navbar navbar-inverse'>\r\n\r\n        <div class='navbar-collapse collapse'>\r\n            <ul class='nav navbar-nav'>\r\n                <li [routerLinkActive]=\"['link-active']\">\r\n                    <a [routerLink]=\"['/home']\">\r\n                        <span class='glyphicon glyphicon-th-list'></span> Fetch Pets\r\n                    </a>\r\n                </li>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n</div>\r\n";
+module.exports = "<div class='main-nav'>\r\n    <div class='navbar navbar-inverse'>\r\n\r\n        <div class='navbar-collapse collapse'>\r\n            <ul class='nav navbar-nav'>\r\n                <li [routerLinkActive]=\"['link-active']\">\r\n                    <a [routerLink]=\"['/home']\">\r\n                        <span class='glyphicon glyphicon-th-list'></span> Cats\r\n                    </a>\r\n                </li>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n</div>\r\n";
 
 /***/ }),
 /* 25 */

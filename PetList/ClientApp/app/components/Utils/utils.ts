@@ -1,6 +1,7 @@
 import { Pipe, PipeTransform } from '@angular/core';
 import { Person, Pet, PetDisplayDto } from '../Models/models';
 
+//Obsolete Method. 
 @Pipe({ name: 'groupBy' })
 export class GroupByPipe implements PipeTransform {
 
@@ -24,7 +25,9 @@ export class GroupByPipe implements PipeTransform {
 
         var result = Object.keys(arr).map(key => ({ key, 'value': arr[key] }));
 
-        
+        //Below code can be used to dsiplay the group details using the pipe template
+        //Currently this is not beinng used 
+
         //var sortedResult = new Array<PetDisplayDto>();
         //for (let group of result) {
         //    var personData = new PetDisplayDto();
