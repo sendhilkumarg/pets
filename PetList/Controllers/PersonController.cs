@@ -25,11 +25,6 @@ namespace PetList.Controllers
            return _personRepository.GetPersons(petType);
         }
 
-        [HttpGet("[action]")]
-        public Task<IEnumerable<Pet>> GetPets([FromQuery] string gender )
-        {
-            return _personRepository.GetPets();
-        }
 
     }
 }

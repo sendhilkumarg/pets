@@ -1,14 +1,26 @@
 
-<h1>Weather forecast</h1>
+<h1>Persons with Cats</h1>
 
-<p>This component demonstrates fetching data from the server.</p>
+<p>This page will display the list of cat names in ascending order organised by the gender of the owner</p>
 
 <p *ngIf="!persons"><em>Loading...</em></p>
+<!-- Designed the Model used for View to fit for the requirement. The DTO has minimal data required to be easily bound to the UI-->
+<ul>
+    <li *ngFor="let petDisplayDto of petDisplayResults">
+        <h2>{{petDisplayDto.ownersGender}}</h2>
+        <ul>
+            <li *ngFor="let petName of petDisplayDto.petNames">
+                {{petName}}
+
+            </li>
+        </ul>
+
+    </li>
+</ul>
 
 
-
-
-
+<!-- Below are the sample code that was used to display the cat names using the pipe template . This was discarded as the sorting by the cats name needed more logic.
+    sorted the data inthe TS itself hence below code is not used-->
 <!--<ul>
     <li *ngFor="let group of persons | groupBy:'gender'">
         <h2>{{group.key}}</h2>
@@ -37,16 +49,3 @@
 
     </li>
 </ul>-->
-
-<ul>
-    <li *ngFor="let petDisplayDto of petDisplayResults">
-        <h2>{{petDisplayDto.ownersGender}}</h2>
-        <ul>
-            <li *ngFor="let petName of petDisplayDto.petNames">
-                {{petName}}
-
-            </li>
-        </ul>
-
-    </li>
-</ul>
