@@ -14275,11 +14275,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Trial\\PetList\\PetList\\PetList.UnitTest\\PetList.UnitTest.csproj",
+      "projectUniqueName": "C:\\Trial\\PetList\\Git\\PetList.UnitTest\\PetList.UnitTest.csproj",
       "projectName": "PetList.UnitTest",
-      "projectPath": "C:\\Trial\\PetList\\PetList\\PetList.UnitTest\\PetList.UnitTest.csproj",
+      "projectPath": "C:\\Trial\\PetList\\Git\\PetList.UnitTest\\PetList.UnitTest.csproj",
       "packagesPath": "C:\\Users\\sgurunathan\\.nuget\\packages\\",
-      "outputPath": "C:\\Trial\\PetList\\PetList\\PetList.UnitTest\\obj\\",
+      "outputPath": "C:\\Trial\\PetList\\Git\\PetList.UnitTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
@@ -14303,8 +14303,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Trial\\PetList\\PetList\\PetList\\PetList.csproj": {
-              "projectPath": "C:\\Trial\\PetList\\PetList\\PetList\\PetList.csproj"
+            "C:\\Trial\\PetList\\Git\\PetList\\PetList.csproj": {
+              "projectPath": "C:\\Trial\\PetList\\Git\\PetList\\PetList.csproj"
             }
           }
         }

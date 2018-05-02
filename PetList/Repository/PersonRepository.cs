@@ -25,8 +25,9 @@ namespace PetList.Repository
 
             using (var request = new HttpRequestMessage(HttpMethod.Get, _options.Path))
             {
-                using (var response = await _httpClientManager.GetClient().SendAsync(request).ConfigureAwait(true))
+                using (var response = await _httpClientManager.GetClient().SendAsync(request).ConfigureAwait(false))
                 {
+                    response.EnsureSuccessStatusCode();
                     var persons= await response.Content.ReasAsJsonAsync<IEnumerable<Person>>().ConfigureAwait(false);
                     if (!string.IsNullOrEmpty(petType)){
                         var result = persons.Where(x => x.pets != null).Select(x =>  new Person
