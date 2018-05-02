@@ -1,0 +1,17 @@
+C:\Trial\PetList\PetList\PetList.UnitTest\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Trial\PetList\PetList\PetList.UnitTest\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Trial\PetList\PetList\PetList.UnitTest\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Trial\PetList\PetList\PetList.UnitTest\bin\Debug\netcoreapp2.0\PetList.UnitTest.deps.json
+C:\Trial\PetList\PetList\PetList.UnitTest\bin\Debug\netcoreapp2.0\PetList.UnitTest.runtimeconfig.json
+C:\Trial\PetList\PetList\PetList.UnitTest\bin\Debug\netcoreapp2.0\PetList.UnitTest.runtimeconfig.dev.json
+C:\Trial\PetList\PetList\PetList.UnitTest\bin\Debug\netcoreapp2.0\PetList.UnitTest.dll
+C:\Trial\PetList\PetList\PetList.UnitTest\bin\Debug\netcoreapp2.0\PetList.UnitTest.pdb
+C:\Trial\PetList\PetList\PetList.UnitTest\obj\Debug\netcoreapp2.0\PetList.UnitTest.csprojResolveAssemblyReference.cache
+C:\Trial\PetList\PetList\PetList.UnitTest\obj\Debug\netcoreapp2.0\PetList.UnitTest.csproj.CoreCompileInputs.cache
+C:\Trial\PetList\PetList\PetList.UnitTest\obj\Debug\netcoreapp2.0\PetList.UnitTest.AssemblyInfoInputs.cache
+C:\Trial\PetList\PetList\PetList.UnitTest\obj\Debug\netcoreapp2.0\PetList.UnitTest.AssemblyInfo.cs
+C:\Trial\PetList\PetList\PetList.UnitTest\obj\Debug\netcoreapp2.0\PetList.UnitTest.dll
+C:\Trial\PetList\PetList\PetList.UnitTest\obj\Debug\netcoreapp2.0\PetList.UnitTest.pdb
+C:\Trial\PetList\PetList\PetList.UnitTest\bin\Debug\netcoreapp2.0\PetList.dll
+C:\Trial\PetList\PetList\PetList.UnitTest\bin\Debug\netcoreapp2.0\PetList.pdb
+C:\Trial\PetList\PetList\PetList.UnitTest\obj\Debug\netcoreapp2.0\PetList.UnitTest.csproj.CopyComplete

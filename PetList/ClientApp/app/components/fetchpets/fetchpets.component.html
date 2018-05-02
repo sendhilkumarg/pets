@@ -1,0 +1,52 @@
+
+<h1>Weather forecast</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+<p *ngIf="!persons"><em>Loading...</em></p>
+
+
+
+
+
+<!--<ul>
+    <li *ngFor="let group of persons | groupBy:'gender'">
+        <h2>{{group.key}}</h2>
+        <ul>
+            <li *ngFor="let person of group.value">
+                <ul>
+                    <li *ngFor="let pet of person.pets">
+                        {{pet.name}}
+                    </li>
+                </ul>
+
+</li>
+        </ul>
+
+    </li>
+</ul>-->
+<!--<ul>
+    <li *ngFor="let petDisplayDto of persons | groupBy:'gender' | pgb">
+        <h2>{{petDisplayDto.ownersGender}}</h2>
+        <ul>
+            <li *ngFor="let petName of petDisplayDto.petNames">
+                {{petName}}
+
+            </li>
+        </ul>
+
+    </li>
+</ul>-->
+
+<ul>
+    <li *ngFor="let petDisplayDto of petDisplayResults">
+        <h2>{{petDisplayDto.ownersGender}}</h2>
+        <ul>
+            <li *ngFor="let petName of petDisplayDto.petNames">
+                {{petName}}
+
+            </li>
+        </ul>
+
+    </li>
+</ul>
