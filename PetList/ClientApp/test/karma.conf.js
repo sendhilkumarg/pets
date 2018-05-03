@@ -9,6 +9,7 @@ module.exports = function (config) {
             '../../wwwroot/dist/vendor.js',
             './boot-tests.ts'
         ],
+        plugins: [require("karma-webpack"), require('karma-jasmine'), require('karma-chrome-launcher')],
         preprocessors: {
             './boot-tests.ts': ['webpack']
         },

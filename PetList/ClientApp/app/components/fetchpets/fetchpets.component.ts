@@ -12,10 +12,17 @@ import { Person, Pet, PetDisplayDto } from '../Models/models';
 export class FetchPetsComponent {
     public persons: Person[];
     public petDisplayResults: PetDisplayDto[];
-
+    private http: Http;
+    private baseUrl: string;
     constructor(http: Http, @Inject('BASE_URL') baseUrl: string) {
-        http.get(baseUrl + 'api/Person/GetPersons?petType=cat').subscribe(result => {
-            
+        this.baseUrl = baseUrl;
+        this.http = http;
+        this.fetchData();
+    }
+
+    fetchData() {
+        this.http.get(this.baseUrl + 'api/Person/GetPersons?petType=cat').subscribe(result => {
+
             this.persons = result.json() as Person[];
 
             const arr: { [key: string]: Array<any> } = {};
@@ -52,6 +59,7 @@ export class FetchPetsComponent {
             this.petDisplayResults = sortedResult;
 
         }, error => console.error(error));
+
     }
 }
 
